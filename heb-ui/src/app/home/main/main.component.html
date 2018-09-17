@@ -1,0 +1,22 @@
+<app-header></app-header>
+<app-search-bar></app-search-bar>
+
+<div class="crow">
+  <div class="w-40" style="padding: 15px;" *ngFor="let result of displayResults">
+    <div class="tile">
+      <h2>
+        [<img *ngIf="result.department === 'Pharmacy'" src="assets/icons/bottle.png" title="{{result.description}}">
+        <img *ngIf="result.department === 'Produce'" src="assets/icons/celery.png" title="{{result.description}}">
+        <img *ngIf="result.department === 'Grocery'" src="assets/icons/ingredients.png" title="{{result.description}}">]
+        {{result.description}}: {{result.price}} {{result.unit}}
+      </h2>
+      <h5>{{result.id}}</h5>
+
+      <p>
+        This item is found in our {{result.department}} department.  It is sure to last you {{result.shelfLife.substring(0, result.shelfLife.length - 1)}} days after you take it home.
+    </p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

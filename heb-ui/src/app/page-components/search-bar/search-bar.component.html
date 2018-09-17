@@ -1,0 +1,18 @@
+<div  style="padding: 15px;">
+  <div class="tile">
+    <div class="crow">
+      <div class="w-30">
+          <input type="text" placeholder="Search..." #reference (keyup.enter)="setSearch(reference.value)">
+          <img src="assets/icons/search.png" class="imgBttn" alt="search" (click)="setSearch(reference.value);">
+      </div>
+
+      <div class="w-70" style="text-align: right;">
+          <img src="assets/icons/shop.png"  title="Home" class="imgBttn" (click)="toggleHome(); reference.value='';" >
+          <img src="assets/icons/bottle.png" [ngStyle]="{'background-color':  selectedPharmacy ? '#777777' : 'transparent'}" class="imgBttn" title="Pharmacy" (click)="togglePharmacy(); reference.value='';">
+          <img src="assets/icons/celery.png" [ngStyle]="{'background-color':  selectedProduce ? '#777777' : 'transparent'}" class="imgBttn" title="Produce" (click)="toggleProduce(); reference.value='';">
+          <img src="assets/icons/ingredients.png" [ngStyle]="{'background-color':  selectedGrocery ? '#777777' : 'transparent'}" class="imgBttn" title="Grocery" (click)="toggleGrocery(); reference.value='';">
+      </div>
+    </div>
+  </div>
+</div>
+

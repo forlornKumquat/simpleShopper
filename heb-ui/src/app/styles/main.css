@@ -1,0 +1,27 @@
+img {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 3px;
+}
+.imgBttn:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+}
+.banner {
+  font-family: 'Courier New', Courier;
+  border-radius: 5px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, #EEEEFF, #FFFFFF);
+}
+#footer {
+  bottom: 30px;
+  width: 100%;
+}
+.tile {
+  height: 100%;
+  font-family: 'Courier New', Courier;
+  border-radius: 5px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, #EEEEFF, #FFFFFF);
+}
